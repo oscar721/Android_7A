@@ -4,4 +4,9 @@
     <string name="lbl_lname">Lastname</string>
     <string name="ht_fname">Peter</string>
     <string name="lbl_reg_act">User Register</string>
+    <string name="lbl_email">E-mail</string>
+    <string name="lbl_password">password</string>
+    <string name="btn_Sing_in">Sing In</string>
+    <string name="btn_Sing_up">Sing Up</string>
+    <string name="txt_loginbar">Login</string>
 </resources>
