@@ -75,7 +75,7 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/btn_register"
+            android:background="@color/btn_login"
             android:text="Register"
             android:textColor="#FFFFFF"
             android:layout_margin="5dp"/>
@@ -85,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:background="@color/btn_login"
+            android:background="#03AD77"
             android:textColor="#FFFFFF"
             android:layout_margin="5dp"/>
 
