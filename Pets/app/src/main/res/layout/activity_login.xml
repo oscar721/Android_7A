@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="20sp">
+        android:padding="20dp">
+
+
 
         <ImageView
             android:id="@+id/imageView"
@@ -18,6 +20,7 @@
             android:layout_height="wrap_content"
             tools:srcCompat="@drawable/loaccount"
             android:layout_marginBottom="20sp"/>
+
 
         <TextView
             android:id="@+id/textView2"
@@ -31,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/ht_email"
             android:inputType="textEmailAddress" />
 
         <TextView
@@ -45,25 +49,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/ht_password"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:layout_marginBottom="20sp"
+            android:layout_marginBottom="5dp"
             android:background="@color/btn_login"
             android:onClick="Btn_Login"
-
+            android:textColor="@color/btn_text"
             tools:text="@string/btn_Sing_in" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="@string/btn_Sing_up"
-            android:background="@color/btn_register"/>
+            android:background="@color/btn_register"
+            android:onClick="Btn_Signup"
+            android:textColor="@color/cardview_light_background"
+            tools:text="@string/btn_Sing_up" />
 
     </LinearLayout>
 </RelativeLayout>

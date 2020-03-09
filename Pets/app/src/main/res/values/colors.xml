@@ -6,4 +6,6 @@
 
     <color name="btn_register">#115F0E</color>
     <color name="btn_login">#AD0303</color>
+    <color name="btn_text">#E4DDDD</color>
+
 </resources>
