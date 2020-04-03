@@ -2,14 +2,28 @@ package com.example.colors;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.Toast;
 
-public class Palette extends AppCompatActivity {
+public class Palette extends AppCompatActivity
+    implements SeekBar.OnSeekBarChangeListener {
+
+
+    //Variables
+    private SeekBar vRed = null;
+    private SeekBar vGreen = null;
+    private SeekBar vBlue = null;
+    private SeekBar vAlpha = null;
+    private View vFilter = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +31,25 @@ public class Palette extends AppCompatActivity {
         setContentView(R.layout.activity_palette);
 
         //Code here....
+        //Get components' id's
+
+        vRed = findViewById(R.id.sbrRed);
+        vGreen = findViewById(R.id.sbrGreen);
+        vBlue = findViewById(R.id.sbrBlue);
+        vAlpha = findViewById(R.id.sbrAlpha);
+        vFilter = findViewById(R.id.vieColors);
+
+        vRed.setOnSeekBarChangeListener(this);
+        vGreen.setOnSeekBarChangeListener(this);
+        vBlue.setOnSeekBarChangeListener(this);
+        vAlpha.setOnSeekBarChangeListener(this);
     }
 
     //Show the options menu on the Device.
 
+    //******************************************************
+    //MENUS
+    //******************************************************
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -33,9 +62,78 @@ public class Palette extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.iteTransparent:
-                //Toast.makeText(this,"This color is going to change", Toast);
+                Toast.makeText(this, "This color id going to change",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.iteSemitransparent:
+                break;
+
+            case R.id.iteOpaque:
+                break;
+
+            case R.id.iteBlack:
+                break;
+
+            case R.id.iteWhite:
+                break;
+
+            case R.id.iteRed:
+                break;
+
+            case R.id.iteGreen:
+                break;
+
+            case R.id.iteBlue:
+                break;
+
+            case R.id.iteCyan:
+                break;
+
+            case R.id.iteMagenta:
+                break;
+
+            case R.id.iteYellow:
+                break;
+
+            case R.id.iteReset:
+                break;
+
+            case R.id.iteAboutof:
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean bo) {
+        //1. Get SeekBar values
+        int r = vRed.getProgress();
+        int g = vGreen.getProgress();
+        int b = vBlue.getProgress();
+        int a = vAlpha.getProgress();
+
+        //2. Convert values (in step 1) to ARGB function
+        int filter_color = Color.argb(a,r,g,b);
+
+        /*
+        int filter_color = Color.argb(
+        vAlpha.getProgress(),
+        vRed.getProgress(),
+        vGreen.getProgress(),
+        vBlue.getProgress());
+        */
+
+        //3. Set the new color to Image (View)
+        vFilter.setBackgroundColor(filter_color);
+    }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+
     }
 }
