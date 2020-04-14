@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
+                android:text="@string/lbl_red"
                 android:textSize="18sp"
                 tools:text="@string/lbl_red" />
 
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
+                android:text="@string/lbl_green"
                 android:textSize="18sp"
                 tools:text="@string/lbl_green" />
 
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
+                android:text="@string/lbl_blue"
                 android:textSize="18sp"
                 tools:text="@string/lbl_blue" />
 
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
+                android:text="@string/lbl_alpha"
                 android:textSize="18sp"
                 tools:text="@string/lbl_alpha" />
 

@@ -10,27 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".InboxActivity" android:label="Inbox">
+        <activity android:name=".InboxActivity" android:label="Inbox"></activity>
 
-        </activity>
-
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/txt_loginbar"
-            android:theme="@style/LoginTheme"
-            >
-
+        <activity android:name=".LoginActivity" android:label="@string/txt_loginbar" android:theme="@style/LoginTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
 
+        <activity android:name=".RegisterActivity"
+            android:label="@string/lbl_reg_act"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 

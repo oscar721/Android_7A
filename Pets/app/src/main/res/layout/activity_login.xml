@@ -56,10 +56,12 @@
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             android:background="@color/btn_login"
             android:onClick="Btn_Login"
-            android:textColor="@color/btn_text"
+            android:text="@string/btn_Sing_in"
+            android:textColor="@color/btn_text_color"
             tools:text="@string/btn_Sing_in" />
 
         <Button
@@ -68,7 +70,8 @@
             android:layout_height="wrap_content"
             android:background="@color/btn_register"
             android:onClick="Btn_Signup"
-            android:textColor="@color/cardview_light_background"
+            android:text="@string/btn_Sing_up"
+            android:textColor="@color/btn_text_color"
             tools:text="@string/btn_Sing_up" />
 
     </LinearLayout>
