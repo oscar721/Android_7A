@@ -18,4 +18,5 @@
     <string name="lblOpYellow">Yellow</string>
     <string name="lblOpReset">Reset</string>
     <string name="lblOpAboutof">About of</string>
+    <string name="lblHelp">Help</string>
 </resources>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:id="@+id/icHelp"
+        android:title="@string/lblHelp"
+        android:icon="@drawable/ic_help"></item>
+
+    <item android:id="@+id/icTransparent"
+        android:title="@string/lblOpTransparent"
+        android:icon="@drawable/ic_transparent" ></item>
+
+
     <item android:id="@+id/iteTransparent" android:title="@string/lblOpTransparent"></item>
     <item android:id="@+id/iteSemitransparent" android:title="@string/lblOpSemiTransparent"></item>
     <item android:id="@+id/iteOpaque" android:title="@string/lblOpOpaque"></item>

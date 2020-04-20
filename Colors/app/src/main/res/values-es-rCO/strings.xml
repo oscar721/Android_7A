@@ -18,4 +18,5 @@
     <string name="lblOpYellow">Amarillo</string>
     <string name="lblOpAboutof">Acerca de</string>
     <string name="lblOpReset">Restablecer</string>
+    <string name="lblHelp">Ayuda</string>
 </resources>
