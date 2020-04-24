@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -44,13 +45,18 @@ public class Palette extends AppCompatActivity
         vGreen.setOnSeekBarChangeListener(this);
         vBlue.setOnSeekBarChangeListener(this);
         vAlpha.setOnSeekBarChangeListener(this);
+
+        //Show the context menu WHEN I do along press in the component
+        registerForContextMenu(vFilter);
     }
 
     //Show the options menu on the Device.
 
     //******************************************************
-    //MENUS
+    // OPTIONS MENUS
     //******************************************************
+    //Show the options menu on the Device.
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -62,6 +68,15 @@ public class Palette extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
+
+            case R.id.icHelp:
+            Toast.makeText(this,"You've pressed Help",Toast.LENGTH_SHORT).show();
+            break;
+
+            case R.id.icTransparent:
+                Toast.makeText(this,"You've pressed Transparent",Toast.LENGTH_SHORT).show();
+                break;
+
             case R.id.iteTransparent:
                 vAlpha.setProgress(0);
                // Toast.makeText(this, "This color id going to change",Toast.LENGTH_SHORT).show();
@@ -122,6 +137,34 @@ public class Palette extends AppCompatActivity
         }
         return super.onOptionsItemSelected(item);
     }
+
+    //******************************************************
+    // CONTEXT MENUS
+    //******************************************************
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        MenuInflater inflater2 = getMenuInflater();
+        inflater2.inflate(R.menu.menu2,menu);
+
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+
+            case R.id.iteHelp:
+                Toast.makeText(this,"You've pressed Help",Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        return super.onContextItemSelected(item);
+    }
+
+    //******************************************************
+    //seekBAR MENUS
+    //******************************************************
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean bo) {
