@@ -10,7 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".AboutofActivity" android:label="@string/lblOpAboutof"></activity>
+        <activity android:name=".HelpActivity" android:label="@string/lblHelp" android:parentActivityName=".Palette">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Palette" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.HelpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AboutofActivity" android:label="@string/lblOpAboutof" android:parentActivityName=".Palette">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Palette" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AboutofActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".Palette">
             <intent-filter>
@@ -20,13 +42,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
 
     </application>
 

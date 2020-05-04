@@ -19,4 +19,12 @@
     <string name="lblOpAboutof">Acerca de</string>
     <string name="lblOpReset">Restablecer</string>
     <string name="lblHelp">Ayuda</string>
+    <string name="lblClose">Cerrar app</string>
+    <string name="lblColors">Colores</string>
+    <string name="lblName">Oscar Alexander Rodriguez Insuasty</string>
+    <string name="lblEmail">rodriguezinsuastyoscar@gmail.com</string>
+    <string name="lblTel">3154553149</string>
+    <string name="lblVer">Versión 1.0</string>
+    <string name="lblText">Para cambiar el color de la imagen, mueva los SeekBar correspondientes al Rojo, Verde y Azul, hasta que obtenga el color deseado.</string>
+    <string name="lblText2">Si no se nota la opacidad del color, mueva el Seekbar Alpha.</string>
 </resources>

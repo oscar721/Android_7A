@@ -5,6 +5,7 @@
     <string name="lbl_blue">Blue</string>
     <string name="lbl_alpha">Alpha</string>
     <!--Options Menu label/options-->
+    <string name="lblColors">Colors</string>
     <string name="lblOpTransparent">Transparent</string>
     <string name="lblOpSemiTransparent">SemiTransparent</string>
     <string name="lblOpOpaque">Opaque</string>
@@ -19,4 +20,14 @@
     <string name="lblOpReset">Reset</string>
     <string name="lblOpAboutof">About of</string>
     <string name="lblHelp">Help</string>
+    <string name="lblClose">Close app</string>
+    <!--About-->
+    <string name="lblName">Oscar Alexander Rodriguez Insuasty</string>
+    <string name="lblEmail">rodriguezinsuastyoscar@gmail.com</string>
+    <string name="lblTel">3154553149</string>
+    <string name="lblVer">Version 1.0</string>
+
+    <string name="lblText">To change the color of the image, move the search bar corresponding to red, green and blue, until you get the desired color.</string>
+    <string name="lblText2">If the opacity of the color is not noticed, move the Seekbar Alpha.</string>
+
 </resources>
