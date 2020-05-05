@@ -24,7 +24,7 @@
     <!--About-->
     <string name="lblName">Oscar Alexander Rodriguez Insuasty</string>
     <string name="lblEmail">rodriguezinsuastyoscar@gmail.com</string>
-    <string name="lblTel">3154553149</string>
+    <string name="lblUn">University CESMAG</string>
     <string name="lblVer">Version 1.0</string>
 
     <string name="lblText">To change the color of the image, move the search bar corresponding to red, green and blue, until you get the desired color.</string>

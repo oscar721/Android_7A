@@ -29,7 +29,7 @@
                     android:inputType="textPersonName" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btnSearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="10dp"
-                    android:background="@color/layoutH1">
+                    android:background="@color/standardColor">
 
                     <TextView
                         android:id="@+id/textView5"
@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="10dp"
-                    android:background="@color/layoutH2">
+                    android:background="@color/standardColor">
 
                     <TextView
                         android:id="@+id/textView7"
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="10dp"
-                    android:background="@color/layoutH3">
+                    android:background="@color/standardColor">
 
                     <TextView
                         android:id="@+id/textView9"
@@ -114,7 +114,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="10dp"
-                    android:background="@color/layoutH4">
+                    android:background="@color/standardColor">
 
                     <TextView
                         android:id="@+id/textView11"
@@ -142,7 +142,7 @@
                     app:srcCompat="@drawable/ic_sun" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btnGo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"

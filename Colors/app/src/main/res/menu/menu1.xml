@@ -18,7 +18,7 @@
 
         <menu>
 
-            <item android:id="@+id/iteTransparent" android:title="@string/lblOpTransparent"></item>
+            <item android:id="@+id/iteTransparent" android:title="@string/lblOpTransparent" ></item>
             <item android:id="@+id/iteSemitransparent" android:title="@string/lblOpSemiTransparent"></item>
             <item android:id="@+id/iteOpaque" android:title="@string/lblOpOpaque"></item>
             <item android:id="@+id/iteBlack" android:title="@string/lblOpBlack"></item>
