@@ -15,11 +15,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Palette" />
 
-            <intent-filter>
-                <action android:name="android.intent.action.HelpActivity" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
         <activity android:name=".AboutofActivity" android:label="@string/lblOpAboutof" android:parentActivityName=".Palette">
@@ -27,22 +23,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Palette" />
 
-            <intent-filter>
-                <action android:name="android.intent.action.AboutofActivity" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
-        <activity android:name=".Palette">
+        <activity android:name=".Palette"></activity>
+
+        <activity android:name=".MainActivity" android:theme="@style/SplashS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity" />
 
     </application>
 

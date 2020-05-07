@@ -5,11 +5,11 @@
     <item android:id="@+id/iteReset"
         android:icon="@drawable/ic_restore"
         android:title="@string/lblOpReset"
-        app:showAsAction="withText"/>
+        app:showAsAction="always"/>
 
     <item android:id="@+id/iteHelp"
         android:icon="@drawable/ic_help2"
         android:title="@string/lblHelp"
-        app:showAsAction="withText"/>
+        app:showAsAction="always"/>
 
 </menu>
