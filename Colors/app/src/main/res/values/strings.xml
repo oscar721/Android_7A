@@ -30,4 +30,6 @@
     <string name="lblText">To change the color of the image, move the search bar corresponding to red, green and blue, until you get the desired color.</string>
     <string name="lblText2">If the opacity of the color is not noticed, move the Seekbar Alpha.</string>
 
+    <string name="lblCol">Selected color</string>
+
 </resources>

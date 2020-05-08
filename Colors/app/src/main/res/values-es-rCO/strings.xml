@@ -27,4 +27,5 @@
     <string name="lblVer">Versión 1.0</string>
     <string name="lblText">Para cambiar el color de la imagen, mueva los SeekBar correspondientes al Rojo, Verde y Azul, hasta que obtenga el color deseado.</string>
     <string name="lblText2">Si no se nota la opacidad del color, mueva el Seekbar Alpha.</string>
+    <string name="lblCol">Color seleccionado</string>
 </resources>

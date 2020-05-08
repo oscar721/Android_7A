@@ -23,7 +23,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Palette" />
 
-
         </activity>
 
         <activity android:name=".Palette"></activity>

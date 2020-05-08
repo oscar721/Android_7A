@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Palette extends AppCompatActivity
@@ -25,6 +26,7 @@ public class Palette extends AppCompatActivity
     private SeekBar vBlue = null;
     private SeekBar vAlpha = null;
     private View vFilter = null;
+    TextView ncolor;
 
 
     @Override
@@ -34,7 +36,7 @@ public class Palette extends AppCompatActivity
 
         //Code here....
         //Get components' id's
-
+        ncolor= (TextView) findViewById(R.id.idcolores);
         vRed = findViewById(R.id.sbrRed);
         vGreen = findViewById(R.id.sbrGreen);
         vBlue = findViewById(R.id.sbrBlue);
@@ -45,6 +47,8 @@ public class Palette extends AppCompatActivity
         vGreen.setOnSeekBarChangeListener(this);
         vBlue.setOnSeekBarChangeListener(this);
         vAlpha.setOnSeekBarChangeListener(this);
+
+
 
         //Show the context menu WHEN I do along press in the component
         registerForContextMenu(vFilter);
@@ -76,18 +80,22 @@ public class Palette extends AppCompatActivity
 
             case R.id.icTransparent:
                 vAlpha.setProgress(0);
+                ncolor.setText(R.string.lblOpTransparent);
                 break;
 
             case R.id.iteTransparent:
                 vAlpha.setProgress(0);
+                ncolor.setText(R.string.lblOpTransparent);
                 break;
 
             case R.id.iteSemitransparent:
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpSemiTransparent);
                 break;
 
             case R.id.iteOpaque:
                 vAlpha.setProgress(255);
+                ncolor.setText(R.string.lblOpOpaque);
                 break;
 
             case R.id.iteBlack:
@@ -95,6 +103,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(0);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpBlack);
                 break;
 
             case R.id.iteWhite:
@@ -102,6 +111,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(255);
                 vBlue.setProgress(2555);
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpWhite);
                 break;
 
             case R.id.iteRed:
@@ -109,6 +119,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(0);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpRed);
                 break;
 
             case R.id.iteGreen:
@@ -116,6 +127,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(255);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpGreen);
                 break;
 
             case R.id.iteBlue:
@@ -123,6 +135,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(0);
                 vBlue.setProgress(255);
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpBlue);
                 break;
 
             case R.id.iteCyan:
@@ -130,6 +143,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(255);
                 vBlue.setProgress(255);
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpCyan);
                 break;
 
             case R.id.iteMagenta:
@@ -137,6 +151,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(0);
                 vBlue.setProgress(255);
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpMagenta);
                 break;
 
             case R.id.iteYellow:
@@ -144,6 +159,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(255);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(128);
+                ncolor.setText(R.string.lblOpYellow);
                 break;
 
             case R.id.iteReset:
@@ -151,6 +167,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(0);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(0);
+                ncolor.setText(R.string.lblCol);
                 break;
 
             case R.id.iteAboutof:
@@ -160,7 +177,6 @@ public class Palette extends AppCompatActivity
                 break;
 
             case R.id.iteClose:
-                Intent inten = new Intent(Intent.ACTION_MAIN);
                 finish();
 
                 break;
@@ -193,6 +209,7 @@ public class Palette extends AppCompatActivity
                 vGreen.setProgress(0);
                 vBlue.setProgress(0);
                 vAlpha.setProgress(0);
+                ncolor.setText(R.string.lblCol);
                 break;
         }
 
