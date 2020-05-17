@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBgDarkula">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lblDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="0"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorTextDarkula"
+            android:textSize="100dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="AC"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="+/-"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="%"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="/"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="7"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="8"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="9"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="*"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="4"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorBtnDarkula"
+                    android:text="5"
+                    android:textColor="@color/colorTextDarkula"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="6"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="-"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorBtnDarkula"
+                    android:onClick="btn1"
+                    android:text="1"
+                    android:textColor="@color/colorTextDarkula"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="2"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="3"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="+"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="0"
+                    android:layout_span="2"
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula" />
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="."
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="="
+                    android:textSize="18sp"
+                    android:background="@color/colorBtnDarkula"
+                    android:textColor="@color/colorTextDarkula"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

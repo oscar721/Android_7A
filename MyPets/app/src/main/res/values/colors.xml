@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--LoginActivity-->
+
+    <color name="colorHint">#000000</color>
+    <color name="colorEtLine">#000000</color>
+
+    <color name="colorBtnLogin">#C85819</color>
+    <color name="colorBtnText">#000000</color>
+
+</resources>
