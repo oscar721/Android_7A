@@ -6,10 +6,10 @@
 
     <!--LoginActivity-->
 
-    <color name="colorHint">#000000</color>
-    <color name="colorEtLine">#000000</color>
+    <color name="colorHint">#FFFFFF</color>
+    <color name="colorEtLine">#FFFFFF</color>
 
     <color name="colorBtnLogin">#C85819</color>
-    <color name="colorBtnText">#000000</color>
+    <color name="colorBtnText">#FFFFFF</color>
 
 </resources>
