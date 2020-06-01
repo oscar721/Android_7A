@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#8EBF80</color>
+    <color name="colorPrimaryDark">#5D8C56</color>
     <color name="colorAccent">#03DAC5</color>
 
     <!--LoginActivity-->
 
-    <color name="colorHint">#FFFFFF</color>
-    <color name="colorEtLine">#FFFFFF</color>
-
+    <color name="colorHint">#000000</color>
+    <color name="colorText">#000000</color>
+    <color name="colorEtLine">#000000</color>
     <color name="colorBtnLogin">#C85819</color>
-    <color name="colorBtnText">#FFFFFF</color>
+    <color name="colorBtnText">#000000</color>
+
+    <!-- Register User-->
+    <color name="colorBtnNewUser">#C85819</color>
+    <color name="colorHint2">#FFFFFF</color>
+    <color name="colorText2">#FFFFFF</color>
+    <color name="colorEtLine2">#FFFFFF</color>
 
 </resources>

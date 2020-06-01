@@ -19,7 +19,7 @@
             android:layout_gravity="center_vertical">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/txtUserLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -27,10 +27,11 @@
                 android:inputType="textEmailAddress"
                 android:textColorHint="@color/colorHint"
                 android:background="@drawable/style_login"
-                android:layout_marginBottom="30dp"/>
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/colorText"/>
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/txtPasswordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -38,7 +39,9 @@
                 android:inputType="textPassword"
                 android:textColorHint="@color/colorHint"
                 android:background="@drawable/style_login"
-                android:layout_marginBottom="30dp"/>
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/colorText"/>
+
 
             <Button
                 android:id="@+id/button"
@@ -47,8 +50,9 @@
                 android:onClick="btnLogin"
                 android:text="@string/btn_text_login"
                 android:background="@drawable/style_login"
-                android:textColor="@color/colorBtnText"
-                android:layout_marginBottom="10dp"/>
+                android:textColor="@drawable/style_loginbtns_pressed"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/button2"
@@ -57,7 +61,8 @@
                 android:background="@drawable/style_login"
                 android:onClick="btnGotoRegisterUser"
                 android:text="@string/btn_text_register"
-                android:textColor="@color/colorBtnText" />
+                android:textColor="@drawable/style_loginbtns_pressed"
+                android:textStyle="bold"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
