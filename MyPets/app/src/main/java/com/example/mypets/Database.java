@@ -1,6 +1,7 @@
 package com.example.mypets;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -59,4 +60,5 @@ public class Database extends SQLiteOpenHelper {
         mypets.execSQL("INSERT INTO pets (name,age,gender,race)" +
                 "VALUES ('Pow','3','Male','None')");
     }
+
 }

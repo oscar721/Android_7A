@@ -52,7 +52,7 @@ public class RegisterUserActivity extends AppCompatActivity {
             }else{
                 //Validate if user already exists
                 Cursor row = mypets.rawQuery("SELECT * FROM users " +
-                        "WHERE email = ?", new String[]{UNAME});
+                        "WHERE email = ? LIMIT 1", new String[]{UNAME});
                 //getCount() <1 or moveToFirst()
                 if(row.getCount()>0){
                     Toast.makeText(this,"::: The user already exits :::",Toast.LENGTH_SHORT).show();
@@ -67,7 +67,8 @@ public class RegisterUserActivity extends AppCompatActivity {
                     mypets.insert("users",null,data);
                     mypets.close();
 
-                    Toast.makeText(this,"The user has been created", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "::: The user has been created :::", Toast.LENGTH_LONG).show();
+
                     Intent i= new Intent(this,LoginActivity.class);
                     startActivity(i);
                 }

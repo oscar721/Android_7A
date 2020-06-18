@@ -14,6 +14,9 @@
     <string name="password2_label">Repeat Password</string>
     <string name="btn_register_label">Register</string>
 
+    <!-- ListPetsActivity -->
+    <string name="title_actListPets">All pets</string>
 
-    <string name="tittle_actListUsers">All User</string>
+    <!-- ListUsersActivity -->
+    <string name="title_actListUsers">All Users</string>
 </resources>

@@ -28,6 +28,8 @@ public class ListUserActivity extends AppCompatActivity {
         userList = findViewById(R.id.lvListUsers);
         listUsers = new ArrayList<>();
 
+        viewUsers();
+
     }
 
     public void viewUsers(){
@@ -36,15 +38,18 @@ public class ListUserActivity extends AppCompatActivity {
         //2. Let write on DB
         SQLiteDatabase mypets = manager.getWritableDatabase();
         //3. Get information from database
+        int idAdmin = 1;
         Cursor row = mypets.rawQuery("SELECT * FROM users",null);
 
         if(row.getCount() == 0){
             Toast.makeText(this,":::There isn't any user registered:::",Toast.LENGTH_SHORT).show();
         }else{
             while(row.moveToNext()){
+                listUsers.add(row.getString(1));
                 listUsers.add(row.getString(3));
             }
             adapter = new ArrayAdapter <>(this,android.R.layout.simple_expandable_list_item_1,listUsers);
+            userList.setAdapter(adapter);
         }
     }
 }

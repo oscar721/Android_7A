@@ -4,21 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListUserActivity">
+    tools:context=".ListPetsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="190dp"
-            app:srcCompat="@drawable/users" />
-
         <ListView
-            android:id="@+id/lvListUsers"
+            android:id="@+id/lvListAllpets"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
